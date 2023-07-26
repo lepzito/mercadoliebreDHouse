@@ -1,0 +1,456 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Roboto";
+  font-size: 12px;
+  background-color: #ebebeb;
+  margin: auto;
+}
+/*////
+AQUI EMPIEZA EL HEADER
+/////*/
+header {
+  background-color: #eac926;
+}
+.encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.logo {
+  width: 45%;
+  margin: 10px 0 0 10px;
+  padding: 2px;
+}
+.encabezado div.searchProduct {
+  margin-right: 10px;
+  width: 45%;
+  max-width: 190px;
+  border: gray 1px solid;
+  border-radius: 7px;
+  background-color: white;
+  padding: 5px 0px 5px 5px;
+  display: flex;
+  justify-content: center;
+}
+.encabezado div.searchProduct input {
+  width: 87%;
+  border: none;
+}
+header .searchProduct button {
+  border: none;
+  background-color: white;
+}
+header .searchProduct button i {
+  font-size: 12px;
+  color: gray;
+  transition: color 300ms;
+}
+header .searchProduct button i:hover {
+  color: #222222;
+}
+.copy-header {
+  font-size: 1.1em;
+  color: #222222;
+  text-align: center;
+  width: 100%;
+}
+.main-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main-navbar a {
+  text-decoration: none;
+  color: #222222;
+  display: inline-block;
+  padding: 15px 0;
+  font-size: 17px;
+}
+.burger-menu {
+  display: block;
+  color: white;
+  border-radius: 8px;
+  background-color: #03264c;
+  text-align: center;
+  margin: auto;
+  padding: 8px 0;
+  max-width: 38px;
+  font-size: 15px;
+}
+.main-navbar {
+  display: none;
+}
+.finalHeader {
+  padding: 10px;
+}
+/*/ ///
+AQUI TERMINA EL HEADER
+/////*/
+section.banner img {
+  width: 100%;
+}
+/* INICIO DEL MAIN */
+div.seccionUltimaVisita,
+div.seccionOfertas {
+  display: flex;
+  flex-wrap: wrap;
+}
+.precio {
+  font-size: 18px;
+  width: 30%;
+}
+.descuento {
+  width: 70%;
+}
+.descuento,
+.nombreProducto {
+  font-size: 16px;
+  font-weight: normal;
+}
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main section h2 {
+  color: gray;
+  margin: 20px 0;
+}
+.nombreProducto {
+  color: gray;
+  display: none;
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 450ms;
+}
+.nombreProducto:hover {
+  opacity: 1;
+}
+
+main section article {
+  background-color: #fff;
+  margin: 10px 0;
+}
+
+main section article img {
+  width: 100%;
+}
+article div.producto-info {
+  border-top: 1px solid #ebebeb;
+  width: 100%;
+  padding: 15px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: baseline;
+}
+main section article i,
+.descuento {
+  color: #39b54a;
+}
+main section article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  transition: transform 450ms;
+}
+main section article i:hover {
+  transform: rotate(-90deg);
+}
+
+/* FIN DEL MAIN */
+/* INICIO DEL FOOTER */
+footer {
+  background-color: white;
+  text-align: center;
+  border: 1px solid #ebebeb;
+  width: 100%;
+  margin: auto;
+}
+.metodoPagos {
+  text-align: center;
+  margin: 10% auto;
+}
+
+.envios {
+  text-align: center;
+  margin: 10% auto;
+}
+
+.seguridad {
+  text-align: center;
+  margin: 10% auto;
+}
+footer b {
+  display: block;
+  font-size: 15px;
+  color: #666;
+}
+footer p {
+  display: block;
+  font-size: 10px;
+  color: gray;
+  width: 65%;
+  margin: auto;
+}
+footer .copyright {
+  font-size: 10px;
+  color: gray;
+  padding-left: 3%;
+  text-align: left;
+  margin-top: 7%;
+}
+footer i {
+  color: #1259c3;
+  font-size: 2em;
+  margin-bottom: 10px;
+  transition: color 300ms;
+}
+footer i:hover {
+  color: gray;
+}
+
+.footer-sections {
+  padding-left: 0%;
+}
+/*FIN FOOTER  */
+
+/* main login.html */
+.form-login {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 10% 5%;
+  flex-direction: column;
+}
+.control-formulario div {
+  padding: 10px;
+}
+.control-formulario div input {
+  width: 66vw;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.control-formulario div button {
+  background-color: #1259c3;
+  color: #fff;
+  width: 66vw;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  border: none;
+  transition: background-color 300ms;
+}
+.control-formulario div button:hover {
+  background-color: #0022aa;
+}
+/* FIN main login.html */
+/* main  register.html */
+main .formulario-registro .datos-usuario {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+main .formulario-registro h3 {
+  margin-left: 8px;
+  margin-top: 10px;
+}
+.formulario-registro .datos-usuario input {
+  margin: 10px auto;
+  width: 95%;
+  padding: 5px;
+  border: none;
+  border-radius: 7px;
+  margin-top: 20px;
+}
+main .perfil-usuario {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 10px;
+}
+main .perfil-usuario label {
+  width: 50vw;
+  display: flex;
+}
+main .perfil-usuario label input {
+  margin-right: 15px;
+}
+main .formulario-registro .interes {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+main .formulario-registro .interes label {
+  display: flex;
+}
+main .formulario-registro .interes label input {
+  margin-right: 5px;
+}
+main .formulario-registro .final-formulario {
+  display: flex;
+  flex-direction: column;
+}
+.custom-file-input {
+  background-color: #0071c5;
+  color: #ebebeb;
+  font-size: 10px;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  max-width: 102px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+input[type="file"] {
+  position: absolute;
+  left: -9999px;
+}
+main .formulario-registro .final-formulario input {
+  margin: 10px auto;
+  width: 95%;
+  padding: 5px;
+  border: none;
+  border-radius: 7px;
+  margin-top: 5px;
+}
+main .formulario-registro .final-formulario button {
+  background-color: #1259c3;
+  color: #fff;
+  width: 65px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px auto;
+  text-align: center;
+  border: none;
+}
+/* FIN register.html */
+@media (min-width: 361px) {
+  /* header */
+  .burger-menu {
+    display: none;
+  }
+  .encabezado {
+    flex-wrap: nowrap;
+  }
+  .copy-header {
+    width: 33%;
+    text-align: right;
+    margin-right: 10px;
+  }
+  .logo {
+    width: 25%;
+  }
+  .searchProduct {
+    max-width: 26vw;
+  }
+  .main-navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-navbar ul li {
+    margin: 0 4px;
+  }
+  .left-navbar a,
+  .right-navbar a {
+    font-size: 11.5px;
+  }
+  /* fin header */
+  /* main */
+  main section article .nombreProducto {
+    display: block;
+  }
+  main section article {
+    transition: box-shadow 450ms;
+  }
+  main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  main section div.productos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main section article {
+    width: 45%;
+  }
+  .precio,
+  .descuento {
+    width: 50%;
+  }
+  .finalHeader {
+    display: none;
+  }
+}
+/* fin main */
+
+@media (min-width: 769px) {
+  .burger-menu {
+    display: none;
+  }
+  .encabezado,
+  .main-navbar {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .main-navbar a {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+  main section article {
+    transition: box-shadow 450ms;
+  }
+  main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .finalHeader {
+    display: none;
+  }
+  .banner img {
+    height: 27.6vh;
+  }
+  /*  main */
+  main section article {
+    width: 22%;
+  }
+  footer .footer-sections {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .footer-sections div {
+    margin: unset;
+    margin-top: 30px;
+  }
+  footer .copyright {
+    margin: unset;
+    margin-top: 40px;
+  }
+}
+
+/* fin main */

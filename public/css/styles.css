@@ -103,10 +103,12 @@ div.seccionOfertas {
 }
 .precio {
   font-size: 18px;
-  width: 30%;
+  width: 40%;
+  text-align: initial;
 }
 .descuento {
-  width: 70%;
+  text-align: center;
+  width: 40%;
 }
 .descuento,
 .nombreProducto {
@@ -144,7 +146,6 @@ main section article img {
 article div.producto-info {
   border-top: 1px solid #ebebeb;
   width: 100%;
-  padding: 15px;
   padding: 15px;
   display: flex;
   flex-wrap: wrap;
@@ -234,15 +235,16 @@ footer i:hover {
 .form-login {
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
-  margin: 10% 5%;
+  margin: 10% auto;
   flex-direction: column;
+  max-width: 400px;
 }
+
 .control-formulario div {
   padding: 10px;
 }
 .control-formulario div input {
-  width: 66vw;
+  width: 100%;
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
@@ -251,7 +253,7 @@ footer i:hover {
 .control-formulario div button {
   background-color: #1259c3;
   color: #fff;
-  width: 66vw;
+  width: 100%;
   padding: 5px 10px;
   border-radius: 5px;
   margin-bottom: 5px;
@@ -264,6 +266,9 @@ footer i:hover {
 }
 /* FIN main login.html */
 /* main  register.html */
+form .formulario-registro {
+  margin: 20px auto;
+}
 main .formulario-registro .datos-usuario {
   display: flex;
   justify-content: space-around;
@@ -342,6 +347,7 @@ main .formulario-registro .final-formulario button {
   margin: 5px auto;
   text-align: center;
   border: none;
+  cursor: pointer;
 }
 /* FIN register.html */
 @media (min-width: 361px) {
@@ -407,6 +413,9 @@ main .formulario-registro .final-formulario button {
   .finalHeader {
     display: none;
   }
+  form .formulario-registro {
+    max-width: 300px;
+  }
 }
 /* fin main */
 
@@ -450,6 +459,9 @@ main .formulario-registro .final-formulario button {
   footer .copyright {
     margin: unset;
     margin-top: 40px;
+  }
+  form .formulario-registro {
+    max-width: 350px;
   }
 }
 
